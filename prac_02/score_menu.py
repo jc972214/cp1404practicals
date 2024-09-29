@@ -8,7 +8,7 @@ Q - Quit
 """
 
 
-def main(score = 'none'):
+def main(score='none'):
     score = get_valid_score(score)
     print(MENU)
     choice = input(">>> ").upper()
