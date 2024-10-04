@@ -8,13 +8,13 @@ Q - Quit
 """
 
 
-def main(score='none'):
-    score = get_valid_score(score)
+def main():
+    score = get_valid_score()
     print(MENU)
     choice = input(">>> ").upper()
     while choice != "Q":
         if choice == "G":
-            score = get_valid_score(score)
+            score = get_valid_score()
         elif choice == "P":
             print(get_result(score))
         elif choice == "S":
@@ -26,7 +26,7 @@ def main(score='none'):
     print("Thank You.")
 
 
-def get_valid_score(score):
+def get_valid_score():
     score = int(input("Enter Valid Score: "))
     while score < 0 or score > 100:
         print("Invalid. Score must be between 0 and 100. Try Again.")
