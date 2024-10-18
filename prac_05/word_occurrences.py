@@ -20,3 +20,4 @@ longest_word = len(max(user_phrase, key=len))
 
 for word in user_phrase:
     print(f"{word:{longest_word}} : {word_to_count[word]}")
+
