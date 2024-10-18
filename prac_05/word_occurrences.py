@@ -16,8 +16,7 @@ for word in user_phrase:
 user_phrase = list(word_to_count.keys())
 user_phrase.sort()
 
-longest_word = len(max(user_phrase, key = len))
+longest_word = len(max(user_phrase, key=len))
 
 for word in user_phrase:
     print(f"{word:{longest_word}} : {word_to_count[word]}")
-
