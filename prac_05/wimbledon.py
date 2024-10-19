@@ -26,7 +26,6 @@ def display_wimbledon_data(champion_to_count, countries):
     print(", ".join(country for country in sorted(countries)))
 
 
-
 def process_wimbledon_data(data):
     champion_to_count = {}
     for datum in data:
