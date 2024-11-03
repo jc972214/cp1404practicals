@@ -1,6 +1,7 @@
 """
 CP1404 Practical 6 - Programming Languages
 Expected Time to Solve: 30 minutes
+Actual Time: 16 minutes
 """
 
 
