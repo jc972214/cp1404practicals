@@ -23,6 +23,14 @@ class ConvertMilesKm(App):
         conversion = miles * MILES_TO_KM
         self.root.ids.output_label.text = str(conversion)
 
+    def handle_increments(self, increment):
+        """Adjusts miles input by +/-1 when up or down button is pressed"""
+        miles = self.get_valid_miles() + increment
+        self.root.ids.user_input.text = str(miles)
+        self.handle_conversion()
+
+
+
 
 
 ConvertMilesKm().run()
