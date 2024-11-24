@@ -1,6 +1,7 @@
 """Prac 09 - Taxi Test"""
 from taxi import Taxi
 
+
 def main():
     """Test functionality of taxi.py subclass"""
     my_taxi = Taxi("Prius 1", 100)
@@ -13,7 +14,6 @@ def main():
     my_taxi.drive(100)
     print(my_taxi)
     print(my_taxi.get_fare())
-
 
 
 main()
